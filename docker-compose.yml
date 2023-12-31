@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    image: react_app2
+    command: npm start
+
+  backend:
+    container_name: backend
+    ports:
+      - "82:3000"
+    image: react_app2
+    command: node index.js
