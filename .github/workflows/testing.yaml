@@ -38,7 +38,7 @@ jobs:
           remote_key: ${{ secrets.PRACTISE_KEY }}
 
       - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@v1.0.1
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: 3.239.174.136
           username: ubuntu
