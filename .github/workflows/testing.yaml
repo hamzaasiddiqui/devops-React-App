@@ -11,7 +11,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
       - name: checking out
         uses: actions/checkout@v4
