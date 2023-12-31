@@ -35,14 +35,14 @@ jobs:
           remote_path: /~/ubuntu/
           remote_host: 3.239.174.136
           remote_user: ubuntu
-          remote_key: ${{ secrets.PRACTISE_SSH }}
+          remote_key: ${{ secrets.PRACTISE_KEY }}
 
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.0.1
         with:
           host: 3.239.174.136
           username: ubuntu
-          key: ${{ secrets.PRACTISE_SSH }}
+          key: ${{ secrets.PRACTISE_KEY }}
           port: 22
           script: |
             docker build -t react_app2 .
